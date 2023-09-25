@@ -7,7 +7,7 @@ const loadPhone = async (searchText = "iphone", isShowing) => {
   displayPhones(phones, isShowing);
 };
 
-const displayPhones = (phones) => {
+const displayPhones = (phones, isShowing) => {
   // console.log(phones);
 
   const phoneContainer = document.getElementById("phone-container");
@@ -66,13 +66,7 @@ const showLoadingRing = (isLoading) => {
   }
 };
 
-// ! Show all section
-const showAllPhone = (isShowing) => {
-  const showALL = document.getElementById("show-all-container");
-  if (isShowing) {
-    showALL.classList.remove = "hidden";
-  } else {
-    showALL.classList.add = "hidden";
-  }
+// ! Show all button section
+const showAllPhone = () => {
+  searchPhone(true);
 };
-// loadPhone();
