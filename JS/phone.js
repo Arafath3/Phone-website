@@ -58,4 +58,13 @@ const showLoadingRing = (isLoading) => {
   }
 };
 
+// ! Show all section
+const showAllPhone = (isShowing) => {
+  const showALL = document.getElementById("show-all-container");
+  if (isShowing) {
+    showALL.classList.remove = "hidden";
+  } else {
+    showALL.classList.add = "hidden";
+  }
+};
 // loadPhone();
